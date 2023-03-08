@@ -1,6 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+//import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
+import * as ReactDOM from "react-dom/client";
+//import { createRoot } from "react-dom/client";
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 import App from "./App";
@@ -13,7 +15,7 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk))
 );
 
-ReactDOM.render(
+ReactDOM.createRoot(
   <Provider store={store}>
     <App />
   </Provider>,
