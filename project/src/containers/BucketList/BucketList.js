@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { createBucket, deleteBucket } from "../../store/actions/bucketActions";
-import Bucket from "../Bucket/Bucket";
-import BucketForm from "../Bucket/BucketForm";
+import Bucket from "../BucketList/BucketList";
+import BucketForm from "../BucketList/BucketList";
 
 const useStyles = makeStyles((theme) => ({
   root: {
